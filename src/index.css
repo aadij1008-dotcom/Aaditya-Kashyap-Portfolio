@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #060a13;
+    color: #f1f5f9;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+  }
+
+  p,
+  li {
+    letter-spacing: 0.01em;
+  }
+}
+
+.glass-surface {
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.72) 0%,
+    rgba(11, 18, 33, 0.86) 100%
+  );
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.glass-surface-hover {
+  transition:
+    transform 200ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 200ms cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-surface-hover:hover {
+  border-color: rgba(34, 211, 238, 0.34);
+  transform: translateY(-2px);
+}
+
+.headline-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 52%, #67e8f9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-resume,
+  #printable-resume * {
+    visibility: visible;
+  }
+  #printable-resume {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #ffffff !important;
+    color: #0f172a !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+  }
+}
