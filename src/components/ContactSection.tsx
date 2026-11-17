@@ -193,9 +193,9 @@ export default function ContactSection() {
               <div className="mt-4 flex flex-wrap gap-3">
                 <button
                   type="button"
-                  onClick={() =>
+                  onClick={(https://de.linkedin.com/in/aaditya-kashyap-288692146) =>
                     setSocialNotice(
-                      'LinkedIn placeholder: https://de.linkedin.com/in/aaditya-kashyap-288692146'
+                      'LinkedIn: https://de.linkedin.com/in/aaditya-kashyap-288692146'
                     )
                   }
                   className="inline-flex min-h-[42px] flex-1 items-center justify-center gap-2 rounded-lg border border-slate-800 bg-slate-900/70 px-4 py-2 text-xs font-medium text-slate-300 transition-colors hover:border-slate-700 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 cursor-pointer whitespace-nowrap"
@@ -206,9 +206,9 @@ export default function ContactSection() {
 
                 <button
                   type="button"
-                  onClick={() =>
+                  onClick={(https://aadij1008-dotcom.github.io/Aaditya-Kashyap-Portfolio/) =>
                     setSocialNotice(
-                      'GitHub placeholder: https://aadij1008-dotcom.github.io/Aaditya-Kashyap-Portfolio/'
+                      'GitHub: https://aadij1008-dotcom.github.io/Aaditya-Kashyap-Portfolio/'
                     )
                   }
                   className="inline-flex min-h-[42px] flex-1 items-center justify-center gap-2 rounded-lg border border-slate-800 bg-slate-900/70 px-4 py-2 text-xs font-medium text-slate-300 transition-colors hover:border-slate-700 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 cursor-pointer whitespace-nowrap"
