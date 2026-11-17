@@ -112,7 +112,7 @@ export const PORTFOLIO_DATA = {
       {
         id: 'linkedin',
         label: 'LinkedIn',
-        statusText: 'Profile URL not yet supplied',
+        statusText: 'https://de.linkedin.com/in/aaditya-kashyap-288692146',
       },
       {
         id: 'github',
