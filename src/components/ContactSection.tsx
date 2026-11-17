@@ -201,7 +201,7 @@ export default function ContactSection() {
                   className="inline-flex min-h-[42px] flex-1 items-center justify-center gap-2 rounded-lg border border-slate-800 bg-slate-900/70 px-4 py-2 text-xs font-medium text-slate-300 transition-colors hover:border-slate-700 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 cursor-pointer whitespace-nowrap"
                 >
                   <Linkedin className="h-4 w-4 text-cyan-300" aria-hidden="true" />
-                  <span>LinkedIn (Placeholder)</span>
+                  <span>LinkedIn (https://de.linkedin.com/in/aaditya-kashyap-288692146)</span>
                 </button>
 
                 <button
@@ -214,7 +214,7 @@ export default function ContactSection() {
                   className="inline-flex min-h-[42px] flex-1 items-center justify-center gap-2 rounded-lg border border-slate-800 bg-slate-900/70 px-4 py-2 text-xs font-medium text-slate-300 transition-colors hover:border-slate-700 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 cursor-pointer whitespace-nowrap"
                 >
                   <Github className="h-4 w-4 text-cyan-300" aria-hidden="true" />
-                  <span>GitHub (Placeholder)</span>
+                  <span>GitHub (https://aadij1008-dotcom.github.io/Aaditya-Kashyap-Portfolio/)</span>
                 </button>
               </div>
               {socialNotice && (
