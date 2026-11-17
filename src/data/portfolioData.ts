@@ -1,3 +1,5 @@
+import heroVisual from '../assets/images/operations_architecture_abstract_1794902575288.jpg';
+
 export interface ExperienceItem {
   id: string;
   company: string;
@@ -105,7 +107,7 @@ export const PORTFOLIO_DATA = {
         detail: 'Bilingual vendor & client support',
       },
     ],
-    visualAsset: '/src/assets/images/operations_architecture_abstract_1794902575288.jpg',
+    visualAsset: heroVisual,
     socials: [
       {
         id: 'linkedin',
