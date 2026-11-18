@@ -6,20 +6,17 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: './',
+    // GitHub Pages serves this project beneath /Aaditya-Kashyap-Portfolio/.
+    // An explicit base keeps built JS/CSS/assets resolving from that subpath.
+    base: '/Aaditya-Kashyap-Portfolio/',
     plugins: [
       react(),
       tailwindcss(),
-      // Copies src/assets into dist/ so root-relative URLs like
-      // "/src/assets/images/..." (e.g. generate_image output) still resolve
-      // in production builds. Do not remove.
       {
         name: 'copy-unbundled-src-assets',
         apply: 'build',
         closeBundle(error?: Error): void {
-          if (error) {
-            return;
-          }
+          if (error) return;
           const distDir = path.resolve(__dirname, 'dist');
           const srcAssets = path.resolve(__dirname, 'src/assets');
           const distAssets = path.resolve(distDir, 'src/assets');
