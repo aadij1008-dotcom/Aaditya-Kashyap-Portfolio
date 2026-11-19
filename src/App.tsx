@@ -10,7 +10,6 @@ import ValuePropositionSection from './components/ValuePropositionSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import ResumeModal from './components/ResumeModal';
-import ThemeSwitcher from './components/ThemeSwitcher';
 
 export default function App() {
   const [resumeOpen, setResumeOpen] = useState(false);
@@ -25,7 +24,6 @@ export default function App() {
       </a>
 
       <Navbar onOpenResume={() => setResumeOpen(true)} />
-      <ThemeSwitcher />
 
       <main id="main-content">
         <HeroSection />
