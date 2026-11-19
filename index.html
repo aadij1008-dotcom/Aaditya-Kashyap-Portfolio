@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080814" />
     <title>Aaditya Kashyap – Operations &amp; Vendor Management</title>
     <meta name="description" content="Portfolio of Aaditya Kashyap, Operations and Vendor Management professional in Berlin with 9+ years of experience in vendor operations, SLA compliance, and bilingual support." />
     <meta property="og:type" content="website" />
@@ -15,6 +16,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      html, body { min-height: 100%; margin: 0; background: #080814; color: #f5f1ff; }
+      #root { min-height: 100vh; }
+      .startup-fallback { min-height: 100vh; box-sizing: border-box; display: grid; place-items: center; padding: 2rem; background: radial-gradient(ellipse at 15% 15%, rgba(255,57,199,.14), transparent 35rem), radial-gradient(ellipse at 85% 30%, rgba(40,240,240,.11), transparent 32rem), #080814; font: 16px/1.6 system-ui, sans-serif; }
+      .startup-fallback-card { max-width: 620px; padding: 2rem; text-align: center; border: 1px solid rgba(40,240,240,.4); border-radius: 16px; background: #101022; }
+      .startup-fallback h1 { margin: .7rem 0; font-size: clamp(1.7rem, 5vw, 2.4rem); line-height: 1.2; }
+      .startup-fallback p { color: #c4bfdc; }
+      .startup-fallback a { display: inline-block; margin-top: .8rem; padding: .7rem 1rem; border-radius: 8px; background: #28f0f0; color: #080814; font-weight: 700; text-decoration: none; }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -34,7 +44,17 @@
     </script>
   </head>
   <body class="bg-[#060A13] text-slate-100 antialiased selection:bg-cyan-500/25 selection:text-cyan-100">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="root">
+      <main class="startup-fallback">
+        <section class="startup-fallback-card">
+          <p style="color:#28f0f0;font-weight:700;letter-spacing:.14em;text-transform:uppercase">Aaditya Kashyap · Berlin</p>
+          <h1>Supplier Support &amp; Compliance Communications Specialist</h1>
+          <p>9+ years in supplier support, vendor operations, compliance-sensitive case management, and German and English customer communications.</p>
+          <p>The interactive portfolio is loading. If it does not appear, use the button below to retry.</p>
+          <a href="javascript:location.reload()">Reload portfolio</a>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/Aaditya-Kashyap-Portfolio/src/main.tsx"></script>
   </body>
 </html>
