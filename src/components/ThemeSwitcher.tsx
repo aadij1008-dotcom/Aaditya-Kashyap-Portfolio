@@ -6,6 +6,7 @@ const themes = [
   { id: 'berlin', name: 'Berlin Tech', description: 'Charcoal with electric blue and cyan', swatches: ['#10151f', '#4387ff', '#38d6e8'] },
   { id: 'forest', name: 'Green Authority', description: 'Deep green, cream and bronze', swatches: ['#10241f', '#d4b77a', '#e9eee5'] },
   { id: 'operations', name: 'Data / Operations', description: 'Slate, emerald and orange highlights', swatches: ['#202936', '#27b887', '#f29b55'] },
+  { id: 'cyberpunk', name: 'Cyberpunk / Neon', description: 'Midnight black with neon cyan and magenta', swatches: ['#080814', '#28f0f0', '#ff39c7'] },
 ] as const;
 
 type ThemeId = (typeof themes)[number]['id'];
@@ -15,9 +16,7 @@ export default function ThemeSwitcher() {
     try {
       const saved = localStorage.getItem('portfolio-theme');
       return themes.some((theme) => theme.id === saved) ? (saved as ThemeId) : 'executive';
-    } catch {
-      return 'executive';
-    }
+    } catch { return 'executive'; }
   });
 
   useEffect(() => {
@@ -35,18 +34,10 @@ export default function ThemeSwitcher() {
           </div>
           <p className="text-xs opacity-70">Select a palette to preview it across the portfolio. Your choice is saved on this device.</p>
         </div>
-        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
           {themes.map((theme) => (
-            <button
-              key={theme.id}
-              type="button"
-              aria-pressed={selected === theme.id}
-              onClick={() => setSelected(theme.id)}
-              className={`theme-option rounded-xl border p-3 text-left transition hover:-translate-y-0.5 ${selected === theme.id ? 'is-selected' : ''}`}
-            >
-              <span className="mb-2 flex gap-1.5" aria-hidden="true">
-                {theme.swatches.map((color) => <span key={color} className="h-4 w-7 rounded-full border border-black/10" style={{ backgroundColor: color }} />)}
-              </span>
+            <button key={theme.id} type="button" aria-pressed={selected === theme.id} onClick={() => setSelected(theme.id)} className={`theme-option rounded-xl border p-3 text-left transition hover:-translate-y-0.5 ${selected === theme.id ? 'is-selected' : ''}`}>
+              <span className="mb-2 flex gap-1.5" aria-hidden="true">{theme.swatches.map((color) => <span key={color} className="h-4 w-7 rounded-full border border-black/10" style={{ backgroundColor: color }} />)}</span>
               <span className="block text-sm font-semibold">{theme.name}</span>
               <span className="mt-0.5 block text-xs opacity-70">{theme.description}</span>
               {selected === theme.id && <span className="mt-2 block text-[11px] font-semibold uppercase tracking-wide">Current preview</span>}
