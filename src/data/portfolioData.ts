@@ -1,7 +1,7 @@
-import heroVisual from '../assets/images/operations_architecture_abstract_1794902575288.jpg';
+import heroVisual from '../assets/images/IMG_0636.jpeg';
 
 export interface ExperienceItem { id: string; company: string; monogram: string; position: string; location?: string; duration: string; responsibilities: string[] }
-export interface CompetencyCategory { id: string; title: string; description: string; skills: { name: string; iconName: 'Handshake' | 'Layers' | 'ShieldCheck' | 'Workflow' | 'Users' | 'Target' | 'HeartHandshake' | 'Headset' | 'Ticket' | 'AlertCircle' | 'MessageSquare' | 'FileSpreadsheet' | 'Cpu' }[] }
+export interface CompetencyCategory { id: string; title: string; description: string; skills: { name: string; iconName: 'Handshake' | 'Layers' | 'ShieldCheck' | 'Workflow' | 'Users' | 'Target' | 'HeartHandshake' | 'BarChart3' | 'Languages' | 'MonitorCog' | 'MailCheck' | 'Database' | 'ShieldAlert' | 'ClipboardCheck' | 'SearchCheck' | 'BadgeCheck' | 'FileCheck2' | 'Gauge' | 'Presentation' | 'MessageSquareText' | 'Phone' | 'UsersRound' }[] }
 export interface EducationItem { id: string; qualification: string; institution: string; year: string; location?: string }
 export interface LanguageItem { id: string; language: string; proficiency: string; levelNote: string; segmentsFilled: number; totalSegments: number }
 export interface ValuePropositionItem { number: string; title: string; description: string }
@@ -30,7 +30,7 @@ export const PORTFOLIO_DATA = {
   hero: {
     greeting: "Hello, I'm Aaditya Kashyap",
     headline: 'Supplier Support & Compliance Communications Specialist',
-    supportingText: 'Customer operations professional experienced in supplier support, compliance-sensitive case management, German and English communication, SLA management and process improvement.',
+    supportingText: 'Customer operations professional experienced in supplier support, compliance-sensitive case management, German and English communication, SLA management and process improvement across high-volume international environments.',
     highlights: [
       { label: '9+ Years of Professional Experience', detail: 'Supplier support, operations & customer service' },
       { label: 'Compliance & Quality', detail: 'Documentation validation & audit readiness' },
@@ -45,7 +45,7 @@ export const PORTFOLIO_DATA = {
   },
   about: {
     paragraphs: [
-      'I am an operations and customer communications professional with 9+ years of experience in supplier and vendor support, customer operations and compliance-sensitive case management for Amazon, Concentrix and international export clients.',
+      'I am an operations and customer communications professional with 9+ years of experience in supplier and vendor support, customer operations and compliance-sensitive case management for Amazon and other international organizations.',
       'My experience includes escalation handling, documentation validation, SLA management and multi-channel communication by email, chat and phone in German and English.',
       'I have a proven record of 100% SLA compliance, peer mentoring and process improvement. I am based in Berlin and seeking supplier support, vendor operations or customer operations roles.',
     ],
@@ -56,16 +56,16 @@ export const PORTFOLIO_DATA = {
     ],
   },
   experience: [
-    { id: 'bb-hotel', company: 'B&B Hotels Dreilinden', monogram: 'BB', position: 'Receptionist (Part-Time)', location: 'Berlin, Germany', duration: 'March 2026 – Present', responsibilities: ['Serve guests in German and English in person, by phone and in writing.', 'Resolve inquiries and complaints at first contact.', 'Validate booking data and guest records for accuracy and audit readiness.', 'Prioritize concurrent guest requests while meeting service standards.'] },
-    { id: 'amazon-mentor', company: 'Amazon India', monogram: 'AMZ', position: 'Operations & Vendor Associate Mentor', location: 'India', duration: 'August 2023 – December 2025', responsibilities: ['Achieved 100% SLA compliance while managing vendor follow-ups and operational cases.', 'Followed up with non-responsive vendors through structured email, chat and phone outreach.', 'Resolved escalated and non-standard cases by validating documentation and data quality.', 'Onboarded and mentored new team members and maintained accurate CRM records.', 'Identified recurring bottlenecks and contributed process improvements.'] },
-    { id: 'amazon-translation', company: 'Amazon India', monogram: 'AMZ', position: 'Translation & Operations Associate II', location: 'India', duration: 'September 2022 – August 2023', responsibilities: ['Coordinated German–English operational communication between teams and external contributors.', 'Resolved payment and account issues through cross-functional collaboration.', 'Tracked cases to completion and contributed workflow improvements that reduced resolution times.'] },
-    { id: 'concentrix', company: 'Concentrix – Amazon.de Project', monogram: 'CNX', position: 'Senior Operations Representative', location: 'India', duration: 'August 2019 – September 2022', responsibilities: ['Handled high-volume customer and operational contacts by phone, email and live chat in German and English.', 'Delivered strong service quality while resolving complex issues or escalating appropriately.', 'Mentored new hires and monitored task queues to protect business continuity.'] },
-    { id: 'savi-impex', company: 'Savi Impex', monogram: 'SI', position: 'Export Operations Executive', location: 'India', duration: 'December 2014 – August 2018', responsibilities: ['Managed client and stakeholder communication for international logistics and export operations.', 'Coordinated documentation and compliance issues while ensuring DGFT regulatory adherence.', 'Maintained strict documentation control and process discipline.'] },
+    { id: 'bb-hotel', company: 'B&B Hotels Dreilinden', monogram: 'BB', position: 'Receptionist (Part-Time)', location: 'Berlin, Germany', duration: 'March 2026 – Present', responsibilities: ['Support front-desk operations, guest communication and accurate reservation handling.'] },
+    { id: 'amazon-mentor', company: 'Amazon India', monogram: 'AMZ', position: 'Operations & Vendor Associate Mentor', location: 'India', duration: 'August 2023 – December 2025', responsibilities: ['Mentored associates and supported vendor operations, SLA compliance and quality monitoring.'] },
+    { id: 'amazon-translation', company: 'Amazon India', monogram: 'AMZ', position: 'Translation & Operations Associate II', location: 'India', duration: 'September 2022 – August 2023', responsibilities: ['Handled German and English translations and operational support.'] },
+    { id: 'concentrix', company: 'Concentrix – Amazon.de Project', monogram: 'CNX', position: 'Senior Operations Representative', location: 'India', duration: 'August 2019 – September 2022', responsibilities: ['Managed German-speaking supplier and customer communications and escalations.'] },
+    { id: 'savi-impex', company: 'Savi Impex', monogram: 'SI', position: 'Export Operations Executive', location: 'India', duration: 'December 2014 – August 2018', responsibilities: ['Managed export documentation, customer coordination and logistics.'] },
   ] as ExperienceItem[],
   competencies: [
-    { id: 'operations', title: 'Operations & Support', description: 'Supplier support, customer operations and structured case management.', skills: [{name:'Supplier Support',iconName:'Handshake'},{name:'Vendor Management',iconName:'Layers'},{name:'Customer Operations',iconName:'Headset'},{name:'Case Management',iconName:'Ticket'},{name:'Escalation Handling',iconName:'AlertCircle'},{name:'Onboarding & Verification',iconName:'Users'}] },
-    { id: 'compliance', title: 'Compliance & Quality', description: 'Compliance documentation, quality assurance and audit readiness.', skills: [{name:'Compliance Documentation',iconName:'ShieldCheck'},{name:'Data Validation',iconName:'Layers'},{name:'SLA Management',iconName:'Target'},{name:'Quality Assurance',iconName:'ShieldCheck'},{name:'Audit Readiness',iconName:'FileSpreadsheet'},{name:'Process Improvement',iconName:'Workflow'}] },
-    { id: 'communication', title: 'Communication & Tools', description: 'Multilingual stakeholder communication and operational tools.', skills: [{name:'Stakeholder Management',iconName:'HeartHandshake'},{name:'Email / Chat / Phone',iconName:'MessageSquare'},{name:'Cross-Functional Collaboration',iconName:'Workflow'},{name:'Peer Mentoring',iconName:'Users'},{name:'CRM Systems',iconName:'Cpu'},{name:'Microsoft & Google Workspace',iconName:'FileSpreadsheet'}] },
+    { id: 'operations', title: 'Operations & Support', description: 'Supplier support, customer operations and structured case management.', skills: [{name:'Supplier Support',iconName:'Handshake'}] },
+    { id: 'compliance', title: 'Compliance & Quality', description: 'Compliance documentation, quality assurance and audit readiness.', skills: [{name:'Compliance Documentation',iconName:'ShieldCheck'}] },
+    { id: 'communication', title: 'Communication & Tools', description: 'Multilingual stakeholder communication and operational tools.', skills: [{name:'Stakeholder Management',iconName:'HeartHandshake'}] },
   ] as CompetencyCategory[],
   education: [
     { id: 'du-banking', qualification: 'Bachelor of Arts (Banking)', institution: 'Delhi University', year: '2011 – 2017', location: 'India' },
